@@ -52,6 +52,11 @@ a{
    text-decoration: none;
 }
 
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC';
+}
+
 .header-navigation{
 	display: flex;
 	flex-direction: row;
