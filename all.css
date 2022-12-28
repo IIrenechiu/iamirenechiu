@@ -62,7 +62,7 @@ a{
 	margin: 0 auto;
 	position: sticky;
 	top: 0;
-	background-color: rgb(56,56,56,0.5);
+	
 
 }
 
@@ -75,7 +75,7 @@ a{
 
 .its-logo{
 	padding: 10px;
-	color: rgb(255,255,255,0.3);;
+	color: rgba(56,56,56,0.5);
 }
 
 .all-content-group{
@@ -94,10 +94,9 @@ a{
    text-align: center;
 }
 
-.its-item-1 ,.its-item-2{
+.its-item-1 ,.its-item-2 ,.its-item-3{
 	width: 125px;
-	margin-bottom: 5px;
-	color: rgba(255,255,255,0.4);
+	color: rgba(56,56,56,0.5);
 }
 
 .items{
@@ -107,11 +106,11 @@ a{
 	display: none;
 	position: absolute;
 	padding: 15px 25px;
-	min-width: 50px;
-	background-color: rgb(255,255,255,0.3);
-	box-shadow: 0px 5px 8px 0px rgba(225,225,225,0.5);
+	min-width: 60px;
 	border: 1px solid rgba(234,234,234,0.7);
    border-radius: 3px;
+   font-size: 14px;
+   text-align: left;
 }
 
 .its-items-group:hover .items{
@@ -127,11 +126,11 @@ a{
 
 .all-language a{
 	display: block;
-	color: rgba(255,255,255,0.4);
+	color: rgba(56,56,56,0.5);
 }
 
 .language-item{
-   border: 1px solid rgba(234,234,234,0.7);
+   border: 1px solid rgba(56,56,56,0.5);
    border-radius: 30px;
    padding: 10px;
    margin-right: 10px;
