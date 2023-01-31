@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body{
+  background-color: #F3F5F6;
+}
+a{
+  color: rgba(56,56,56,0.5);
+  text-decoration: none;
+}
+.wrap{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin: 10px;
+  align-items: center;
+}
+.its-logo{
+  width: 50px;
+  height: 50px;
+  color: rgba(56,56,56,0.5);
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.menu li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li:hover .items{
+  display: block;
+}
+
+.menu li a{
+  display: block;
+  color:rgba(56,56,56,0.5);
+  padding: 8px;
+  text-decoration: none;
+}
+
+.items{
+  display: none;
+  position: absolute;
+  padding: 15px 25px;
+  min-width: 60px;
+  font-size: 12px;
+  line-height: 18px;
+  top: 35px;
+}
+
+.all-language{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all-language a{
+  display: block;
+  color: rgba(56,56,56,0.5);
+}
+
+.language-item{
+   border: 1px solid rgba(210,210,210,0.5);
+   border-radius: 4px;
+   padding: 2px;
+   margin-right: 10px;
+   font-size: 10px;
+}
+
+
+
+
+/*在PC上隱藏漢堡選單*/
+.showmenu{
+  display: none;
+}
+@media (max-width: 767px){
+  .menu {
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 2.3s;
+    margin-top: 1px;
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    /*header 80px+1px boder 線條*/
+    top: 52px;
+    left: 0;
+    right: 0;
+    background:rgba(128,128,128,0.1);
+  }
+  .menu{
+    flex-direction: column;
+  }
+  .menu li{
+    flex-direction: column;
+  }
+  .items{
+    position: unset;
+  }
+  .all-language{
+    display: none;
+  }
+  .menu li a{
+    transition: all 0.3s;
+  }
+  .menu li a:hover{
+    background:rgba(56,56,56,0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
+  .showmenu{
+    display: block;
+    float: right;
+    margin: 1em;
+  }
+  /*jQ點擊後動態在 body 加上 class */
+  .menu-show .menu{
+    max-height: 500px
+}
+}
+
+
+
+

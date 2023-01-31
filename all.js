@@ -1,4 +1,0 @@
-$(function(){
-    $('#dowebok').fullpage();
-    
-});
