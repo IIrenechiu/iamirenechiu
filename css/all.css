@@ -53,28 +53,36 @@ a{
   color: rgba(56,56,56,0.5);
   text-decoration: none;
 }
+
 .wrap{
   max-width: 960px;
   margin: 0 auto;
 }
+
 .header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  margin: 10px;
   align-items: center;
 }
+
 .its-logo{
   width: 50px;
   height: 50px;
   color: rgba(56,56,56,0.5);
 }
+
+.its-logo a{
+  display: block;
+  margin: 5px 20px 0px 20px;
+}
+
 .menu{
   display: flex;
   flex-direction: row;
   justify-content: end;
 }
+
 .menu li{
   display: flex;
   flex-direction: row;
@@ -89,7 +97,7 @@ a{
 .menu li a{
   display: block;
   color:rgba(56,56,56,0.5);
-  padding: 8px;
+  padding: 5px;
   text-decoration: none;
 }
 
@@ -116,44 +124,52 @@ a{
 }
 
 .language-item{
-   border: 1px solid rgba(210,210,210,0.5);
-   border-radius: 4px;
-   padding: 2px;
+  border: 1px solid rgba(210,210,210,0.5);
+  border-radius: 4px;
+  padding: 2px;
    margin-right: 10px;
    font-size: 10px;
 }
 
+#header-content{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
 
-
-
-/*在PC上隱藏漢堡選單*/
-.showmenu{
+ .wrapper-hamburger {
   display: none;
 }
+ 
 @media (max-width: 767px){
   .menu {
-    /*隱藏選單開始*/
-    max-height: 0px;
-    overflow: hidden;
-    /*隱藏選單結束*/
-    transition: max-height 2.3s;
-    margin-top: 1px;
-    /*絕對定位疊在網頁上*/
-    position: absolute;
-    z-index: 100;
-    /*header 80px+1px boder 線條*/
-    top: 52px;
-    left: 0;
-    right: 0;
-    background:rgba(128,128,128,0.1);
+   /*隱藏選單開始*/
+   display: none;
+   /*max-height: 0px;
+   overflow: hidden;*/
+   /*隱藏選單結束*/
+   transition: max-height 2.3s;
+   margin-top: 1px;
+   /*絕對定位疊在網頁上*/
+   position: absolute;
+   z-index: 100;
+   /*header 80px+1px boder 線條*/
+   top: 0;
+   left: 0;
+   right: 0;
+   /*background:rgba(128,128,128,0.1);*/
   }
   .menu{
     flex-direction: column;
   }
   .menu li{
     flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
   }
   .items{
+    display: block;
     position: unset;
   }
   .all-language{
@@ -162,22 +178,69 @@ a{
   .menu li a{
     transition: all 0.3s;
   }
-  .menu li a:hover{
-    background:rgba(56,56,56,0.5);
-    color: #fff;
+
+  .wrapper-hamburger {
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 10px 20px 0px 20px;
+  }
+
+.cross-button {
+    width: 20px;
+    height: 3px;
+    background-color: rgba(56,56,56,0.5);
+    transition: all 0.2s;
+  }
+
+.header-content_active {
+    background-color: rgba(215,215,215,0.3);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .header-content_active .menu {
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 8vh;
   }
-  .showmenu{
-    display: block;
-    float: right;
-    margin: 1em;
+
+  .header-content_active .logo {
+    color: white;
   }
-  /*jQ點擊後動態在 body 加上 class */
-  .menu-show .menu{
-    max-height: 500px
-}
-}
+
+  .header-content_active .link-text {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .header-content_active .wrapper-hamburger {
+    height: 30px;
+    justify-content: center;
+  }
+
+  .header-content_active .cross-button {
+    background-color: rgba(56,56,56,0.5);
+  }
+
+  .header-content_active .cross-button-top {
+    transform: rotate(45deg) translateY(2px);
+  }
+
+  .header-content_active .cross-button-bottom {
+    transform: rotate(-45deg) translateY(-2px);
+  }
+
 
 
 

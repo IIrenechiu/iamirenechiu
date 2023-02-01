@@ -1,6 +1,6 @@
-$(document).ready(function() {
-   $('.showmenu').on('click',  function(e){
-      e.preventDefault();
-      $('body').toggleClass('menu-show');
-  });
+let target = document.getElementById("header-content");
+let button = document.getElementById("hamburger");
+
+button.addEventListener("click", function (event) {
+  target.classList.toggle("header-content_active");
 });

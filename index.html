@@ -15,11 +15,8 @@
   
   <!-- js -->
 	<script src="js/jquery-3.6.3.min.js"></script>
-  <script src="js/all.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
-    
 
 </head>
 <body>
@@ -30,47 +27,62 @@
 
 <div class="header-navigation" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
 
-	 <div class="wrap">
-    <div class="header">
-      <div class="its-logo"><a href=""><img src="">AAAAA</a></div>
-      
-      <ul class="menu">
-          <li><a href="#">About</a>
-            <ul class="items">
-							<li class="item-about">關於我</li>
-							<li class="item-about">技能</li>
-							<li class="item-about">語言</li>
-				   </ul>
-          </li>
+	<!-- menu / hambuger -->
+	<div class="wrap" class="header header-content_active header-content wrapper-content">
+	    <div id="header-content">
+	      <div class="its-logo"><a href=""><img src="">AAAAA</a></div>
+	      
+	      <ul class="menu ">
+	          <li><a href="#">About</a>
+	            <ul class="items">
+								<li class="item-about"><a href="#">關於我</a></li>
+								<li class="item-about"><a href="#">技能</a></li>
+								<li class="item-about"><a href="#">語言</a></li>
+					   </ul>
+	          </li>
 
-          <li><a href="#">Works</a>
-            <ul class="items">
-							<li class="item-work">平面設計</li>
-							<li class="item-work">品牌設計</li>
-							<li class="item-work">編輯設計</li>
-							<li class="item-work">介面設計</li>
-							<li class="item-work">網頁設計</li>
-			  	 </ul>
-          </li>
-          <li><a href="#">Cotact me</a></li>
-          
-          <ul class="all-language">
-						<li class="language-item scale-up-center"><a href="">CH</a></li>
-						<li class="language-item scale-up-center"><a href="">EN</a></li>
-						<li class="language-item scale-up-center"><a href="">KR</a></li>
-	        </ul>	
-      </ul>
-      <a href="#" class="showmenu">menu</a>
-    </div>
+	          <li><a href="#">Works</a>
+	            <ul class="items">
+								<li class="item-work"><a href="#">平面設計</a></li>
+								<li class="item-work"><a href="#">品牌設計</a></li>
+								<li class="item-work"><a href="#">編輯設計</a></li>
+								<li class="item-work"><a href="#">介面設計</a></li>
+								<li class="item-work"><a href="#">網頁設計</a></li>
+				  	 </ul>
+	          </li>
+	          <li><a href="#">Cotact me</a></li>
+	          
+	          <ul class="all-language">
+							<li class="language-item scale-up-center"><a href="">CH</a></li>
+							<li class="language-item scale-up-center"><a href="">EN</a></li>
+							<li class="language-item scale-up-center"><a href="">KR</a></li>
+		        </ul>	
+	      </ul>
+
+	      <div id="hamburger" class="wrapper-hamburger">
+	            <div class="cross-button-top cross-button"></div>
+	            <div class="cross-button-bottom cross-button"></div>
+	      </div>
+	    </div>
+	</div>
 
 
-    <div class="content">
-    </div>
-   </div>
+  <!-- about content -->
+  <div class="about-content">
+  	<img src="" alt="">
+
+  </div>
 
 
-<div class="footer"></div>
+
+	<!-- footer -->
+	<div class="footer"></div>
 
 </div>
+
+
+
+<!-- js -->
+<script src="js/all.js"></script>
 </body>
 </html>
