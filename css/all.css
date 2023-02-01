@@ -149,8 +149,9 @@ a{
    /*max-height: 0px;
    overflow: hidden;*/
    /*隱藏選單結束*/
-   transition: max-height 2.3s;
+   transition: max-height 3.3s;
    margin-top: 1px;
+   flex-direction: column;
    /*絕對定位疊在網頁上*/
    position: absolute;
    z-index: 100;
@@ -158,10 +159,7 @@ a{
    top: 0;
    left: 0;
    right: 0;
-   /*background:rgba(128,128,128,0.1);*/
-  }
-  .menu{
-    flex-direction: column;
+   animation: menu-animation 1.3s;
   }
   .menu li{
     flex-direction: column;
@@ -176,7 +174,7 @@ a{
     display: none;
   }
   .menu li a{
-    transition: all 0.3s;
+    transition: all 0.8s;
   }
 
   .wrapper-hamburger {
@@ -192,7 +190,7 @@ a{
     width: 20px;
     height: 3px;
     background-color: rgba(56,56,56,0.5);
-    transition: all 0.2s;
+    transition: all 0.3s;
   }
 
 .header-content_active {
@@ -204,6 +202,7 @@ a{
     align-content: flex-start;
     align-items: center;
     padding-bottom: 20px;
+    transition: all 1.3s;
   }
 
   .header-content_active .menu {
@@ -212,6 +211,7 @@ a{
     flex-direction: column;
     align-items: flex-start;
     margin-top: 8vh;
+    opacity: 1;
   }
 
   .header-content_active .logo {
