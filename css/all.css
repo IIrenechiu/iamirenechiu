@@ -55,7 +55,7 @@ a{
 }
 
 .wrap{
-  max-width: 960px;
+  max-width: 98%;
   margin: 0 auto;
 }
 
@@ -88,6 +88,7 @@ a{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 10px;
 }
 
 .menu li:hover .items{
@@ -97,18 +98,21 @@ a{
 .menu li a{
   display: block;
   color:rgba(56,56,56,0.5);
-  padding: 5px;
+  padding: 6px;
   text-decoration: none;
 }
 
 .items{
   display: none;
   position: absolute;
-  padding: 15px 25px;
+  padding: 6px 2px;
   min-width: 60px;
   font-size: 12px;
-  line-height: 18px;
-  top: 35px;
+  line-height: 6px;
+  top: 40px;
+  background-color: rgba(255,255,255,0.4);
+  box-shadow: 2px 2px 2px 1px rgb(204,204,204,0.1);
+  border-radius: 4px;
 }
 
 .all-language{
@@ -116,6 +120,10 @@ a{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.all-language li{
+  padding: 0px;
 }
 
 .all-language a{
@@ -127,8 +135,8 @@ a{
   border: 1px solid rgba(210,210,210,0.5);
   border-radius: 4px;
   padding: 2px;
-   margin-right: 10px;
-   font-size: 10px;
+  margin-right: 10px;
+  font-size: 10px;
 }
 
 #header-content{
@@ -169,6 +177,12 @@ a{
   .items{
     display: block;
     position: unset;
+    line-height: 9px;
+    padding: 15px 15px;
+    top: 35px;
+    background-color: rgba(255,255,255,0);
+    box-shadow: none;
+    border-radius:none;
   }
   .all-language{
     display: none;
@@ -210,7 +224,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 8vh;
+    margin:11vh 2vh;
     opacity: 1;
   }
 
@@ -240,8 +254,89 @@ a{
   .header-content_active .cross-button-bottom {
     transform: rotate(-45deg) translateY(-2px);
   }
+  }
 
+/*maincontent*/
+.maincontent-works{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+}
+.maincontent-works a{
+  display: block;
+  color: rgba(78,78,78,0.7);
+  font-size: 25px;
+}
+#myBtnContainer{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px 12px 0px;
+}
+.row {
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 6px;
+}
 
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 23.65%;
+  display: none; /* Hide all elements by default */
+}
 
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 8px 8px;
+  background-color: none;
+  color: rgba(56,56,56,0.2);
+  background-color: rgba(56 56 56 / 0%);
+  margin: 0px 15px;
+}
+
+.btn:hover {
+  color: rgba(78,78,78,0.7);
+  border-bottom: 1px solid rgba(56 56 56 / 0.5);
+}
+
+@media (max-width: 767px){
+.maincontent-works a{
+  font-size: 18px;
+}
+
+.row > .column {
+    padding: 3px;
+}
+.column{
+    width: 48%;
+}
+}
 
