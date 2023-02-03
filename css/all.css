@@ -46,8 +46,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body{
+body.{
   background-color: #F3F5F6;
+  
 }
 a{
   color: rgba(56,56,56,0.5);
@@ -55,8 +56,10 @@ a{
 }
 
 .wrap{
-  max-width: 98%;
+  max-width: 100%;
   margin: 0 auto;
+  overflow: hidden;
+  position: fixed;
 }
 
 .header{
@@ -144,6 +147,7 @@ a{
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   position: sticky;
 }
 
  .wrapper-hamburger {
@@ -185,7 +189,8 @@ a{
     border-radius:none;
   }
   .all-language{
-    display: none;
+/*    display: none;*/
+   margin: 0 auto;
   }
   .menu li a{
     transition: all 0.8s;
@@ -197,7 +202,10 @@ a{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    margin: 10px 20px 0px 20px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+/*    margin: 10px 20px 0px 20px;*/
   }
 
 .cross-button {
@@ -207,24 +215,32 @@ a{
     transition: all 0.3s;
   }
 
+
 .header-content_active {
-    background-color: rgba(215,215,215,0.3);
+    background-color: rgba(225,225,225,0.95);
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
     align-items: center;
-    padding-bottom: 20px;
+/*    padding-bottom: 20px;*/
     transition: all 1.3s;
   }
-
+  .header-content_active .body {
+    overflow: hidden;
+    height: 100%;
+  }
+  .header-content_active #header-content{
+    height: 100%;
+  }
   .header-content_active .menu {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin:11vh 2vh;
+    margin:11vh 0vh;
     opacity: 1;
   }
 
@@ -239,7 +255,6 @@ a{
   }
 
   .header-content_active .wrapper-hamburger {
-    height: 30px;
     justify-content: center;
   }
 
@@ -253,6 +268,12 @@ a{
 
   .header-content_active .cross-button-bottom {
     transform: rotate(-45deg) translateY(-2px);
+  }
+
+  #hamburger{
+    position:fixed;
+    top: 20px;
+    right: 20px;
   }
   }
 
@@ -270,7 +291,7 @@ a{
 #myBtnContainer{
   display: flex;
   justify-content: center;
-  margin: 15px 0px 12px 0px;
+  margin: 15px 10px 12px 10px;
 }
 .row {
   margin: 0px 5px;
@@ -315,7 +336,7 @@ a{
 .btn {
   border: none;
   outline: none;
-  padding: 8px 8px;
+  padding: 5px 2px;
   background-color: none;
   color: rgba(56,56,56,0.2);
   background-color: rgba(56 56 56 / 0%);
