@@ -12,6 +12,11 @@ button.addEventListener("click", function (event) {
   target.classList.toggle("header-content_active");
 });
 
+
+$("#hamburger").click(function () {
+  $(".maincontent").toggle();
+});
+
 //maincontent
 filterSelection("all")
 function filterSelection(c) {
