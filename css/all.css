@@ -46,144 +46,111 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body.{
+body{
   background-color: #F3F5F6;
-  
 }
 a{
-  color: rgba(56,56,56,0.5);
   text-decoration: none;
 }
-
 .wrap{
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
-  overflow: hidden;
+}
+.header{
+  height: 60px;
   position: fixed;
+  width: 100%;
+  background-color: #F3F5F6;
+}
+.logo{
+  float: left;
+  width: 60px;
+  height: 30px;
+  background: #c4c4c4;
+  border: 2px solid #9c9c9c;
+  margin: 15px;
+  position: fixed;
+  z-index: 9999;
 }
 
-.header{
+.menuallwrap{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
 }
-
-.its-logo{
-  width: 50px;
-  height: 50px;
-  color: rgba(56,56,56,0.5);
-}
-
-.its-logo a{
-  display: block;
-  margin: 5px 20px 0px 20px;
-}
-
 .menu{
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
 }
-
 .menu li{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
+  float: left;
 }
-
-.menu li:hover .items{
-  display: block;
-}
-
 .menu li a{
   display: block;
-  color:rgba(56,56,56,0.5);
-  padding: 6px;
+  color: rgba(200,200,200,0.7);
+  padding: 10px;
   text-decoration: none;
 }
 
 .items{
   display: none;
-  position: absolute;
-  padding: 6px 2px;
+  flex-direction: column;
+  padding: 15px 25px;
   min-width: 60px;
   font-size: 12px;
-  line-height: 6px;
-  top: 40px;
-  background-color: rgba(255,255,255,0.4);
-  box-shadow: 2px 2px 2px 1px rgb(204,204,204,0.1);
-  border-radius: 4px;
+  line-height: 18px;
+  top: 35px;
+}
+.content{
+  padding: 8px;
+  line-height: 1.8;
+}
+.content p{
+  margin-bottom: 1em;
 }
 
-.all-language{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.all-language li{
-  padding: 0px;
-}
-
-.all-language a{
-  display: block;
-  color: rgba(56,56,56,0.5);
-}
-
-.language-item{
-  border: 1px solid rgba(210,210,210,0.5);
-  border-radius: 4px;
-  padding: 2px;
-  margin-right: 10px;
-  font-size: 10px;
-}
-
-#header-content{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   position: sticky;
-}
-
- .wrapper-hamburger {
+.wrapper-hamburger {
   display: none;
 }
- 
 @media (max-width: 767px){
   .menu {
-   /*隱藏選單開始*/
-   display: none;
-   /*max-height: 0px;
-   overflow: hidden;*/
-   /*隱藏選單結束*/
-   transition: max-height 3.3s;
-   margin-top: 1px;
-   flex-direction: column;
-   /*絕對定位疊在網頁上*/
-   position: absolute;
-   z-index: 100;
-   /*header 80px+1px boder 線條*/
-   top: 0;
-   left: 0;
-   right: 0;
-   animation: menu-animation 1.3s;
+    /*隱藏選單開始*/
+    height: 100vh;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: height 2s;
+    transition: background 1.2s;
+    transition: display 1.2s;
+    background: rgba(60,60,60,0);
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    /*header 80px+1px boder 線條*/
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(60,60,60,0.8);
+    display: none;
   }
+
   .menu li{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 15px;
+    color: rgba(200,200,200,0.7);
+    line-height: 28px;
   }
+
+  .menuallwrap{
+    margin-top: 20%;
+    flex-direction: column;
+
+  }
+
   .items{
-    display: block;
-    position: unset;
-    line-height: 9px;
-    padding: 15px 15px;
-    top: 35px;
+    display: flex;
+    padding: 5px 25px;
     background-color: rgba(255,255,255,0);
     box-shadow: none;
     border-radius:none;
@@ -205,53 +172,14 @@ a{
     position: fixed;
     right: 20px;
     top: 20px;
-/*    margin: 10px 20px 0px 20px;*/
+    z-index: 9999;
   }
 
-.cross-button {
+  .cross-button {
     width: 20px;
     height: 3px;
     background-color: rgba(56,56,56,0.5);
     transition: all 0.3s;
-  }
-
-
-.header-content_active {
-    background-color: rgba(225,225,225,0.95);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: center;
-/*    padding-bottom: 20px;*/
-    transition: all 1.3s;
-  }
-  .header-content_active .body {
-    overflow: hidden;
-    height: 100%;
-  }
-  .header-content_active #header-content{
-    height: 100%;
-  }
-  .header-content_active .menu {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin:11vh 0vh;
-    opacity: 1;
-  }
-
-  .header-content_active .logo {
-    color: white;
-  }
-
-  .header-content_active .link-text {
-    color: white;
-    font-size: 36px;
-    margin-bottom: 50px;
   }
 
   .header-content_active .wrapper-hamburger {
@@ -269,29 +197,38 @@ a{
   .header-content_active .cross-button-bottom {
     transform: rotate(-45deg) translateY(-2px);
   }
+  
+  
+  /*jQ點擊後動態在 body 加上 class */
+  .menu-show .menu{
+    height: 100vh;
+    display: block;
+}
+}
 
-  #hamburger{
-    position:fixed;
-    top: 20px;
-    right: 20px;
-  }
-  }
 
 /*maincontent*/
+
+.maincontent{
+  margin-top: 50px;
+}
+
 .maincontent-works{
     display: flex;
     justify-content: center;
-    margin: 20px 0px 0px 0px;
+/*    margin: 20px 0px 0px 0px;*/
 }
 .maincontent-works a{
   display: block;
   color: rgba(78,78,78,0.7);
   font-size: 25px;
+  letter-spacing: 0.3em;
+  font-weight: 300;
 }
 #myBtnContainer{
   display: flex;
   justify-content: center;
-  margin: 15px 10px 12px 10px;
+  margin: 15px 15px 12px 15px;
 }
 .row {
   margin: 0px 5px;
@@ -322,7 +259,6 @@ a{
 
 /* Content */
 .content {
-  background-color: white;
   padding: 10px;
   border-radius: 5px;
 }
@@ -336,11 +272,11 @@ a{
 .btn {
   border: none;
   outline: none;
-  padding: 5px 2px;
+  padding: 5px 5px;
   background-color: none;
   color: rgba(56,56,56,0.2);
   background-color: rgba(56 56 56 / 0%);
-  margin: 0px 15px;
+  margin: 0px 10px;
 }
 
 .btn:hover {
@@ -348,9 +284,16 @@ a{
   border-bottom: 1px solid rgba(56 56 56 / 0.5);
 }
 
+.btn .active a{
+  color: rgba(78,78,78,0.7);
+  border-bottom: 1px solid rgba(56 56 56 / 0.5);
+}
+
 @media (max-width: 767px){
 .maincontent-works a{
   font-size: 18px;
+  letter-spacing: 0.3em;
+  font-weight: 300;
 }
 
 .row > .column {
@@ -360,4 +303,9 @@ a{
     width: 48%;
 }
 }
+
+
+
+
+
 

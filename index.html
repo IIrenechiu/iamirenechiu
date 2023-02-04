@@ -1,156 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>2023</title>
+  <meta charset="UTF-8">
+  <title>2023por</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<!-- css -->
-	<link rel="stylesheet" href="css/all.css">
-	<link rel="stylesheet" href="css/animation.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-	<!-- 字體 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- 字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   
   <!-- js -->
-	<script src="js/jquery-3.6.3.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 </head>
 <body>
+  <div class="wrap ">
+    <div id="header-content"class="header">
+      <div class="logo"></div>
 
-<script>
-  AOS.init();
-</script>
+      <ul class="menu ">
+          <div class="menuallwrap">
+            <li><a href="#">About</a>
+              <ul class="items">
+                <li class="item-about">關於我</li>
+                <li class="item-about">技能</li>
+                <li class="item-about">語言</li>
+             </ul>
+            </li>
+            <li><a href="#">Works</a>
+              <ul class="items">
+                <li class="item-work">平面設計</li>
+                <li class="item-work">品牌設計</li>
+                <li class="item-work">編輯設計</li>
+                <li class="item-work">介面設計</li>
+                <li class="item-work">網頁設計</li>
+             </ul>
+            </li>
+            <li><a href="#">Cotact me</a></li>
+         </div>
+      </ul>
 
-<div class="header-navigation" data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1000">
+        <div id="hamburger" class="wrapper-hamburger showmenu">
+              <div class="cross-button-top cross-button"></div>
+              <div class="cross-button-bottom cross-button"></div>
+        </div>
 
-	<!-- menu / hambuger -->
-	<div class="wrap" class="header header-content_active header-content wrapper-content">
-    
-	    <div id="header-content">
-	      <div class="its-logo"><a href=""><img src="">AAAAA</a></div>
-	      
-	      <ul class="menu ">
-	          <li><a href="#">About</a>
-	            <ul class="items">
-								<li class="item-about"><a href="#">關於我</a></li>
-								<li class="item-about"><a href="#">技能</a></li>
-								<li class="item-about"><a href="#">語言</a></li>
-					   </ul>
-	          </li>
-
-	          <li><a href="#">Works</a>
-	            <ul class="items">
-								<li class="item-work"><a href="#">平面設計</a></li>
-								<li class="item-work"><a href="#">品牌設計</a></li>
-								<li class="item-work"><a href="#">編輯設計</a></li>
-								<li class="item-work"><a href="#">介面設計</a></li>
-								<li class="item-work"><a href="#">網頁設計</a></li>
-				  	 </ul>
-	          </li>
-	          <li><a href="#">Cotact me</a></li>
-	          
-	          <ul class="all-language">
-							<li class="language-item scale-up-center"><a href="">CH</a></li>
-							<li class="language-item scale-up-center"><a href="">EN</a></li>
-							<li class="language-item scale-up-center"><a href="">KR</a></li>
-		        </ul>	
-	      </ul>
-
-	      <div id="hamburger" class="wrapper-hamburger">
-	            <div class="cross-button-top cross-button"></div>
-	            <div class="cross-button-bottom cross-button"></div>
-	      </div>
-	    </div>
-
-
-<!-- maincontent -->
-
-<div class="maincontent">
-
- <!--  <div class="maincontent-about">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, reiciendis officiis iusto quibusdam eaque ab.</p>
-  </div>   -->
-
-
- <div class="maincontent-works"><a href="">Works</a></div>
-   <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> ALL
-    </button>
-    <button class="btn" onclick="filterSelection('a-section')"> 平面設計
-    </button>
-    <button class="btn" onclick="filterSelection('b-section')">品牌設計
-    </button>
-    <button class="btn" onclick="filterSelection('c-section')">編輯設計
-    </button>
-    <button class="btn" onclick="filterSelection('d-section')">介面設計
-    </button>
-    <button class="btn" onclick="filterSelection('e-section')">網頁設計
-    </button>
+    </div>
   </div>
+  
 
-  <div class="row">
-    <div class="column a-section">
-      <div class="content">
-        <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="Mountains" style="width:100%">
-        <h4></h4>
+<div class="content">
+ <div class="maincontent">
+
+   <div class="maincontent-works"><a href="">Works</a></div>
+     <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> ALL
+      </button>
+      <button class="btn" onclick="filterSelection('a-section')"> 平面設計
+      </button>
+      <button class="btn" onclick="filterSelection('b-section')">品牌設計
+      </button>
+      <button class="btn" onclick="filterSelection('c-section')">編輯設計
+      </button>
+      <button class="btn" onclick="filterSelection('d-section')">介面設計
+      </button>
+      <button class="btn" onclick="filterSelection('e-section')">網頁設計
+      </button>
+     </div>
+
+    <div class="row">
+      <div class="column a-section">
+        <div class="content">
+          <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="Mountains" style="width:100%">
+          <h4></h4>
+        </div>
       </div>
-    </div>
-    <div class="column a-section">
-      <div class="content">
-      <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="Lights" style="width:100%">
-        <h4></h4>
+      <div class="column a-section">
+        <div class="content">
+        <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="Lights" style="width:100%">
+          <h4></h4>
+        </div>
       </div>
-    </div>
-    <div class="column a-section">
-      <div class="content">
-      <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="A" style="width:100%">
-        <h4></h4>
+      <div class="column a-section">
+        <div class="content">
+        <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="A" style="width:100%">
+          <h4></h4>
+        </div>
       </div>
-    </div>
-    
-    <div class="column b-section">
-      <div class="content">
+      
+      <div class="column b-section">
+        <div class="content">
+          <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="B" style="width:100%">
+          <h4></h4>
+        </div>
+      </div>
+      <div class="column b-section">
+        <div class="content">
         <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="B" style="width:100%">
-        <h4></h4>
+          <h4></h4>
+        </div>
       </div>
-    </div>
-    <div class="column b-section">
-      <div class="content">
-      <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="B" style="width:100%">
-        <h4></h4>
+      <div class="column b-section">
+        <div class="content">
+        <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="B" style="width:100%">
+          <h4></h4>
+        </div>
       </div>
-    </div>
-    <div class="column b-section">
-      <div class="content">
-      <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="B" style="width:100%">
-        <h4></h4>
-      </div>
-    </div>
 
-    <div class="column c-section">
-      <div class="content">
+      <div class="column c-section">
+        <div class="content">
+          <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="C" style="width:100%">
+          <h4></h4>
+        </div>
+      </div>
+      <div class="column d-section">
+        <div class="content">
         <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="C" style="width:100%">
-        <h4></h4>
+          <h4></h4>
+        </div>
       </div>
-    </div>
-    <div class="column d-section">
-      <div class="content">
-      <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="C" style="width:100%">
-        <h4></h4>
+      <div class="column e-section">
+        <div class="content">
+        <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="C" style="width:100%">
+          <h4></h4>
+        </div>
       </div>
+    <!-- END GRID -->
     </div>
-    <div class="column e-section">
-      <div class="content">
-      <img src="https://skm-iot-images.s3.ap-northeast-1.amazonaws.com/App_Images/727/Page/20230119/65dd5850-dbf5-47b5-9098-4220b6439f42.jpg" alt="C" style="width:100%">
-        <h4></h4>
-      </div>
-    </div>
-  <!-- END GRID -->
-  </div>
 
  <!-- END maincontent -->
  </div>
@@ -160,13 +144,7 @@
 
 
 
-	<!-- footer -->
-	<div class="footer"></div>
-
-
-
-
-<!-- js -->
-<script src="js/all.js"></script>
+ <!-- js -->
+<script src="js/all.js"></script> 
 </body>
 </html>
