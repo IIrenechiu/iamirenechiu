@@ -13,9 +13,9 @@ button.addEventListener("click", function (event) {
 });
 
 
-$("#hamburger").click(function () {
-  $(".maincontent").toggle();
-});
+// $("#hamburger").click(function () {
+//   $(".maincontent").toggle();
+// });
 
 //maincontent
 filterSelection("all")

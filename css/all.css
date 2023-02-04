@@ -116,23 +116,26 @@ a{
 @media (max-width: 767px){
   .menu {
     /*隱藏選單開始*/
-    height: 100vh;
+    height: 0vh;
     overflow: hidden;
     /*隱藏選單結束*/
-    transition: height 2s;
-    transition: background 1.2s;
-    transition: display 1.2s;
-    background: rgba(60,60,60,0);
+    transition: opacity 1.2s;
     /*絕對定位疊在網頁上*/
     position: absolute;
     z-index: 100;
-    /*header 80px+1px boder 線條*/
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(205,205,205,0.5);
-    display: none;
+    background: rgba(205,205,205,0.9);
+    opacity: 0;
   }
+
+  /*jQ點擊後動態在 body 加上 class */
+  .menu-show .menu{
+    height: 100vh;
+    opacity: 1;
+    display: block;
+}
 
   .menu li{
     flex-direction: column;
@@ -204,14 +207,7 @@ a{
   .header-content_active .cross-button-bottom {
     transform: rotate(-45deg) translateY(-2px);
   }
-  
-  
-  /*jQ點擊後動態在 body 加上 class */
-  .menu-show .menu{
-    height: 100vh;
-    display: block;
-}
-}
+  }
 
 
 /*maincontent*/
@@ -310,9 +306,3 @@ a{
     width: 48%;
 }
 }
-
-
-
-
-
-
