@@ -130,7 +130,7 @@ a{
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(215,215,215,0.5);
+    background: rgba(205,205,205,0.5);
     display: none;
   }
 
@@ -140,6 +140,10 @@ a{
     margin-left: 15px;
     color: rgba(170,170,170,0.8);
     line-height: 28px;
+  }
+
+  .menu li:hover{
+    color: rgba(78,78,78,0.8);
   }
 
   .menu li:hover{
