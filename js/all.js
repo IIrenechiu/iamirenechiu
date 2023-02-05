@@ -61,3 +61,23 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+$(document).ready(function() {
+  $(`.btn-box`).click(function() {
+    $(this).parent().children(".overlay").fadeIn(600);
+
+  });
+
+  $(`.close`).click(function() {
+    $(".overlay").fadeOut('600', function() {
+      
+    });
+  });
+
+});
+
+
+
+
+
+

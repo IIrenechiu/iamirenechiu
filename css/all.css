@@ -60,7 +60,8 @@ a{
   height: 60px;
   position: fixed;
   width: 100%;
-  background-color: #F3F5F6;
+  background-color: #f3f5f661;
+  z-index: 9999;
 }
 .logo{
   float: left;
@@ -125,8 +126,7 @@ a{
   box-shadow: 2px 2px 2px 1px rgb(204,204,204,0.1);
   border-radius: 4px;
 }
-.content{
-  padding: 8px;
+.contentall{
   line-height: 1.8;
 }
 .content p{
@@ -163,9 +163,9 @@ a{
   .menu li{
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 15px;
+    margin-left: 10px;
     color: rgba(170,170,170,0.8);
-    line-height: 28px;
+    line-height: 12px;
   }
 
   .menu li:hover{
@@ -183,7 +183,7 @@ a{
 
   .items{
     display: block;
-    padding: 5px 25px;
+    padding: 5px 15px;
     background-color: rgba(255,255,255,0);
     box-shadow: none;
     border-radius:none;
@@ -206,7 +206,7 @@ a{
     position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 9999;
+    z-index: 200;
   }
 
   .cross-button {
@@ -277,6 +277,7 @@ a{
   display: none; /* Hide all elements by default */
 }
 
+
 /* Clear floats after rows */ 
 .row:after {
   content: "";
@@ -286,13 +287,17 @@ a{
 
 /* Content */
 .content {
-  padding: 10px;
+  padding: 2px;
+}
+
+.content img{
   border-radius: 5px;
 }
 
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
+  position: relative;
 }
 
 /* Style the buttons */
@@ -314,6 +319,80 @@ a{
 .btn .active a{
   color: rgba(78,78,78,0.7);
   border-bottom: 1px solid rgba(56 56 56 / 0.5);
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(71, 69, 69, 0.7);
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  display: none;
+  padding-top: 20px;
+}
+
+.overlay-inner {
+  top: 50%;
+  right: 0px;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255 255 255 / 50%);
+  max-width: fit-content;
+  padding: 35px 10px 10px 10px;
+  position: relative;
+  border-radius: 5px;
+  opacity: 1;
+  box-shadow: 1px 1px 3px #30303040;
+}
+
+.close {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  background-image: none;
+  color: #474545;
+  border-width: 0px;
+  text-transform: uppercase;
+  background-color: #fff0;
+}
+
+.overlay-inner img {
+  height: auto;
+  width: 100%;
+  transform: none;
+}
+
+.btn-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.content .project:hover .btn-box {
+  display: block;
+}
+
+.btnview{
+  background-color: rgba(255 255 255 / 30%);
+  color: rgba(56 56 56 / 80%);
+  border: none;
+  display: block;
+  padding: 15px;
+  box-shadow: 1px 1px 3px #30303040;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.smallImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 767px){
