@@ -260,13 +260,16 @@ a{
 
 #picturegrid{
   column-count: 4;
+  -moz-column-count:4;
+  -webkit-column-count:4;
   column-gap: 2px;
   margin: 0 auto;
   width: 96%;
+
 }
 .row {
   margin: 0px 0px;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
