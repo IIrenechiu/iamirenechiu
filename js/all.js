@@ -68,7 +68,7 @@ $(document).ready(function() {
 
   });
 
-  $(`.close`).click(function() {
+  $(`.close,.overlay`).click(function() {
     $(".overlay").fadeOut('600', function() {
       
     });

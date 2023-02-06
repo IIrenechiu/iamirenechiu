@@ -257,24 +257,30 @@ a{
   justify-content: center;
   margin: 15px 15px 12px 15px;
 }
+
+#picturegrid{
+  column-count: 4;
+  column-gap: 2px;
+  margin: 0 auto;
+  width: 96%;
+}
 .row {
-  margin: 0px 5px;
+  margin: 0px 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
-  padding: 6px;
+  padding: 2px;
 }
-
-/* Create three equal columns that floats next to each other */
 .column {
-  width: 23.65%;
-  display: none; /* Hide all elements by default */
+  width: 100%;
+  display: none; 
 }
 
 
@@ -332,6 +338,7 @@ a{
   z-index: 10000;
   display: none;
   padding-top: 20px;
+  overflow: scroll;
 }
 
 .overlay-inner {
@@ -396,6 +403,10 @@ a{
 }
 
 @media (max-width: 767px){
+#picturegrid{
+  column-count: 2;
+  width: 100%;
+}  
 .maincontent-works a{
   font-size: 18px;
   letter-spacing: 0.3em;
@@ -403,9 +414,9 @@ a{
 }
 
 .row > .column {
-    padding: 3px;
+    padding: 2px;
 }
 .column{
-    width: 48%;
+    width: 100%;
 }
 }
