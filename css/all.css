@@ -240,12 +240,12 @@ a{
   margin-top: 50px;
 }
 
-.maincontent-works{
+.maincontent-works, .maincontent-about{
     display: flex;
     justify-content: center;
 /*    margin: 20px 0px 0px 0px;*/
 }
-.maincontent-works a{
+.maincontent-works a, .maincontent-about a{
   display: block;
   color: rgba(78,78,78,0.7);
   font-size: 25px;
@@ -410,7 +410,7 @@ a{
   column-count: 2;
   width: 100%;
 }  
-.maincontent-works a{
+.maincontent-works a ,.maincontent-about a{
   font-size: 18px;
   letter-spacing: 0.3em;
   font-weight: 300;
