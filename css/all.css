@@ -263,6 +263,8 @@ a{
   -moz-column-count:4;
   -webkit-column-count:4;
   column-gap: 2px;
+  -moz-column-gap: 2px;
+  -moz-column-gap: 2px;
   margin: 0 auto;
   width: 96%;
 
@@ -297,6 +299,7 @@ a{
 /* Content */
 .content {
   padding: 2px;
+  display: inline-block;
 }
 
 .content img{
@@ -378,6 +381,8 @@ a{
 
 .btn-box {
   position: absolute;
+  -moz-position: absolute;
+  -webkit-position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -408,6 +413,8 @@ a{
 @media (max-width: 767px){
 #picturegrid{
   column-count: 2;
+  -moz-column-count: 2;
+  -webkit-column-count:2;
   width: 100%;
 }  
 .maincontent-works a ,.maincontent-about a{
