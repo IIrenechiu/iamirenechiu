@@ -297,10 +297,11 @@ a{
 /* Content */
 .content {
   padding: 2px;
-  display: block;
+  display: table;
   -webkit-display: table;
   column-break-inside: avoid; 
   -webkit-column-break-inside: avoid; 
+  
 }
 
 .content img{
