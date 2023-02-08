@@ -279,7 +279,7 @@ a{
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
-  padding: 2px;
+/*  padding: 2px;*/
 }
 .column {
   width: 100%;
@@ -309,6 +309,9 @@ a{
   border-radius: 5px;
 }
 
+.contentpic{
+  padding: 2px;
+}
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
@@ -427,7 +430,6 @@ a{
 }
 
 .row > .column {
-    padding: 2px;
 }
 .column{
     width: 100%;
