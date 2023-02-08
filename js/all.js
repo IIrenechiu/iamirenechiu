@@ -12,10 +12,14 @@ button.addEventListener("click", function (event) {
   target.classList.toggle("header-content_active");
 });
 
+// $(document).ready(function(){
+//  $('.showmenu').on('click',  function(e){
+//       e.preventDefault();
+//   $("content").hide();
 
-// $("#hamburger").click(function () {
-//   $(".maincontent").toggle();
+//   });
 // });
+
 
 //maincontent
 filterSelection("all")

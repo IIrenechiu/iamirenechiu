@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  background-color: #F3F5F6;
 }
 ol, ul {
   list-style: none;
@@ -45,9 +46,6 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-body{
-  background-color: #F3F5F6;
 }
 a{
   text-decoration: none;
@@ -259,14 +257,14 @@ a{
 }
 
 #picturegrid{
-  column-count: 4;
-  -moz-column-count:4;
-  -webkit-column-count:4;
+  column-count: 3;
+  -moz-column-count:3;
+  -webkit-column-count:3;
   column-gap: 2px;
   -moz-column-gap: 2px;
   -moz-column-gap: 2px;
   margin: 0 auto;
-  width: 96%;
+  width: 88%;
 
 }
 .row {
@@ -299,7 +297,8 @@ a{
 /* Content */
 .content {
   padding: 2px;
-  display: inline-block;
+  display: table;
+  -webkit-column-break-inside: avoid; 
 }
 
 .content img{
@@ -415,7 +414,7 @@ a{
   column-count: 2;
   -moz-column-count: 2;
   -webkit-column-count:2;
-  width: 100%;
+  width: 96%;
 }  
 .maincontent-works a ,.maincontent-about a{
   font-size: 18px;
