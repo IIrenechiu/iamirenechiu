@@ -298,7 +298,7 @@ a{
 .content {
   padding: 2px;
   display: table;
-  -webkit-display: table;
+  display: -webkit-table;
   column-break-inside: avoid; 
   -webkit-column-break-inside: avoid; 
   width: 100%;
@@ -311,6 +311,7 @@ a{
 
 .contentpic{
   padding: 2px;
+  display: -webkit-inline-box;
 }
 /* The "show" class is added to the filtered elements */
 .show {
