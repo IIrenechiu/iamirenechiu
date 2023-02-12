@@ -63,13 +63,15 @@ a{
 }
 .logo{
   float: left;
-  width: 60px;
+  width: 105px;
   height: 30px;
-  background: #c4c4c4;
-  border: 2px solid #9c9c9c;
-  margin: 15px;
+  margin: 10px;
   position: fixed;
   z-index: 9999;
+}
+
+.logo img{
+  width: 100%;
 }
 
 .menuallwrap{
@@ -135,6 +137,12 @@ a{
   display: none;
 }
 @media (max-width: 767px){
+  .logo{
+  width: 90px;
+  height: 30px;
+  margin: 2px;
+}
+
   .menu {
     /*隱藏選單開始*/
     height: 0vh;
