@@ -67,7 +67,7 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 $(document).ready(function() {
-  $(`.btn-box`).click(function() {
+  $(`.contentpic`).click(function() {
     $(this).parent().children(".overlay").fadeIn(600);
 
   });
