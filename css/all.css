@@ -249,7 +249,6 @@ a{
 .maincontent-works, .maincontent-about{
     display: flex;
     justify-content: center;
-/*    margin: 20px 0px 0px 0px;*/
 }
 .maincontent-works a, .maincontent-about a{
   display: block;
@@ -258,6 +257,33 @@ a{
   letter-spacing: 0.3em;
   font-weight: 300;
 }
+
+.about-section{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.about-section img{
+  width: 55%;
+  height: 50%;
+  display: block;
+}
+
+.about-section p{
+  display: block;
+/*  width: 49%;*/
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(78,78,78,0.7);
+  text-align:justify;
+}
+
+.about-introduction{
+  width: 44%;
+}
+
 #myBtnContainer{
   display: flex;
   justify-content: center;
