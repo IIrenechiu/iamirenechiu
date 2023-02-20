@@ -289,10 +289,12 @@ hr{
 }
 .about-introduction{
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  justify-content: center;
 }
 .about-introduction img{
   width: 30%;
@@ -406,7 +408,7 @@ hr{
   display: grid;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 #tab-accwrap-web{
   display: none;
 }
@@ -533,11 +535,12 @@ hr{
 .btn {
   border: none;
   outline: none;
-  padding: 5px 5px;
+  padding: 8px 10px;
   background-color: none;
   color: rgba(56,56,56,0.2);
   background-color: rgba(56 56 56 / 0%);
   margin: 0px 10px;
+  font-size: 15px;
 }
 
 .btn:hover {
