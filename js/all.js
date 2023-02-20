@@ -1,3 +1,5 @@
+
+//hamburger
 $(document).ready(function() {
    $('.showmenu').on('click',  function(e){
       e.preventDefault();
@@ -19,6 +21,43 @@ button.addEventListener("click", function (event) {
 
 //   });
 // });
+
+
+//tab-innerwrap
+$(function(){
+    var _showTab = 0;
+    var $li = $('ul.tab-title li');
+        $($li. eq(_showTab) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+        
+        $li.mouseover(function(){
+            $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
+            $(this).addClass('active'). siblings ('.active').removeClass('active');
+        });
+
+
+    var amount = '';
+    function scroll() {
+        $('.nav').animate({
+            scrollLeft: amount
+        }, 100, 'linear',function() {
+            if (amount != '') {
+                scroll();
+            }
+        });
+    }
+    $('.arrow-right').hover(function() {
+        amount = '+=40';
+        scroll();
+    }, function() {
+        amount = '';
+    });
+    $('.arrow-left').hover(function() {
+        amount = '-=40';
+        scroll();
+    }, function() {
+        amount = '';
+    });
+    });
 
 
 //maincontent
@@ -54,7 +93,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-
+//overlay
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");

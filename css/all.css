@@ -50,6 +50,13 @@ table {
 a{
   text-decoration: none;
 }
+
+hr{
+  background-color:rgba(56,56,56,0.2);
+  border:none;
+  height: 1px;
+}
+
 .wrap{
   width: 100%;
   margin: 0 auto;
@@ -122,7 +129,7 @@ a{
   font-size: 12px;
   line-height: 5px;
   top: 55px;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(225,225,225,0.9);
   box-shadow: 2px 2px 2px 1px rgb(204,204,204,0.1);
   border-radius: 4px;
 }
@@ -131,6 +138,11 @@ a{
 }
 .content p{
   margin-bottom: 1em;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(78,78,78,0.7);
+  text-align: center;
+  width: 95%;
 }
 
 .wrapper-hamburger {
@@ -143,27 +155,27 @@ a{
   margin: 2px;
 }
 
-  .menu {
-    /*隱藏選單開始*/
-    height: 0vh;
-    overflow: hidden;
-    /*隱藏選單結束*/
-    transition: opacity 1.2s;
-    /*絕對定位疊在網頁上*/
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(230,230,230,0.9);
-    opacity: 0;
-  }
+.menu {
+  /*隱藏選單開始*/
+  height: 0vh;
+  overflow: hidden;
+  /*隱藏選單結束*/
+  transition: opacity 1.2s;
+  /*絕對定位疊在網頁上*/
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(230,230,230,0.9);
+  pacity: 0;
+}
 
-  /*jQ點擊後動態在 body 加上 class */
-  .menu-show .menu{
-    height: 100vh;
-    opacity: 1;
-    display: block;
+/*jQ點擊後動態在 body 加上 class */
+.menu-show .menu{
+  height: 100vh;
+  opacity: 1;
+  display: block;
 }
 
   .menu li{
@@ -246,42 +258,205 @@ a{
   margin-top: 50px;
 }
 
-.maincontent-works, .maincontent-about{
+.maincontent-works, .maincontent-about ,.maincontent-experience{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
-.maincontent-works a, .maincontent-about a{
+.maincontent-works a, .maincontent-about a ,.maincontent-experience a{
   display: block;
   color: rgba(78,78,78,0.7);
   font-size: 25px;
-  letter-spacing: 0.3em;
+  letter-spacing: 6px;
   font-weight: 300;
+}
+
+.about-all-formob{
+  display: none;
 }
 
 .about-section{
   margin: 0 auto;
   display: flex;
+  width: 75%;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
 }
 .about-section img{
   width: 55%;
-  height: 50%;
-  display: block;
+  height: auto;
+}
+.about-introduction{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.about-introduction img{
+  width: 30%;
+  height: auto;
+  padding: 10px;
+}
+.about-year {
+    font-size: 12px;
+    color: #4d443e;
+    font-weight: 800;
+    line-height: 15px;
+    padding-bottom: 8px;
+}
+/*tab-accwrap-web*/
+#tab-accwrap-web{ 
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width:75%;
+ 
 }
 
+.nav{
+  margin:0;
+  padding:0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  display:inline-block;
+  width:100%;
+  height:6rem;
+  white-space:nowrap;
+  behaviour:'smooth';
+}
+.nav::-webkit-scrollbar {
+  background-color: transparent;
+  outline: 0px solid transparent;
+}
+
+
+.tab-title-outer{
+  overflow: hidden;
+  width: 200px;   
+}
+
+.tab-title{ 
+  list-style:none;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  max-width: 100%;
+  padding-top: 10px;
+  margin-bottom:10px;
+}
+
+.tab-title a {
+  display: block;
+  text-decoration: none;
+  color: rgba(56,56,56,0.2);
+  font-size:15px;
+  padding:10px;
+  width: 100px;
+  border-radius: 40px;
+}
+
+
+.tab-title li{
+  text-align: center;
+  padding-top: :20px;
+  /*padding-bottom: 20px;*/
+  line-height: 20px;
+  font-size:14px;
+  width: 140px;
+  height: 43px;
+  font-size: 20px;
+  align-items: center;
+  display: grid;
+}
+
+.tab-inner{ 
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.tab-inner li{
+  width: 24.6%;
+  /*padding:10px;*/
+  border-radius:2px;
+  border: 1px solid #eaeaea;
+  margin-bottom:8px;
+}
+
+.tab-innerwrap{
+  width: 100%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  
+}
+
+.tab-title .active a{ 
+  background-color: rgba(200, 200, 200, 0.2);
+  color:rgba(78,78,78,0.7);
+  align-items: center;
+  display: grid;
+}
+
+@media (max-width: 768px){
+#tab-accwrap-web{
+  display: none;
+}
+
+.about-all-formob{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.about-section{
+  width: 100%;
+  flex-direction: column;
+}
+.about-section img{
+  width: 100%;
+}
+.about-year{
+  font-size: 12px;
+  color: #4d443e;
+  font-weight: 800;
+  line-height: 15px;
+  padding-bottom: 8px;
+}
+.about-experience p{
+  width: 100% !important;
+  text-align: start !important;
+}
 .about-section p{
   display: block;
-/*  width: 49%;*/
+  width: 60%;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 18px;
   color: rgba(78,78,78,0.7);
-  text-align:justify;
+  text-align:start;
+  padding: 10px;
 }
-
 .about-introduction{
-  width: 44%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.about-introduction img{
+  width: 25%;
+  height: auto;
+  padding: 15px;
+  margin: 10px 0px 25px 0px;
+}
 }
 
 #myBtnContainer{
@@ -299,6 +474,7 @@ a{
   -moz-column-gap: 2px;
   margin: 0 auto;
   width: 75%;
+  height: 1000px;
 
 }
 .row {
@@ -459,8 +635,9 @@ a{
   -moz-column-count: 2;
   -webkit-column-count:2;
   width: 96%;
+  height: 1200px;
 }  
-.maincontent-works a ,.maincontent-about a{
+.maincontent-works a ,.maincontent-about a ,.maincontent-experience a{
   font-size: 18px;
   letter-spacing: 0.3em;
   font-weight: 300;
