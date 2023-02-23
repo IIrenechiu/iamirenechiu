@@ -65,7 +65,7 @@ hr{
   height: 60px;
   position: fixed;
   width: 100%;
-  background-color: #f3f5f661;
+  background-color: #f3f5f6;
   z-index: 9999;
 }
 .logo{
@@ -255,7 +255,7 @@ hr{
 /*maincontent*/
 
 .maincontent{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .maincontent-works, .maincontent-about ,.maincontent-experience{
@@ -658,6 +658,7 @@ hr{
 @media (max-width: 767px){
 .btn {
   padding: 5px 5px;
+  font-size: 13px;
 }  
 #picturegrid{
   column-count: 2;
