@@ -497,7 +497,7 @@ hr{
   -moz-column-gap: 2px;
   margin: 0 auto;
   width: 75%;
-  height: 1500px;
+  height: 2000px;
 
 }
 .row {
@@ -663,7 +663,7 @@ hr{
   -moz-column-count: 2;
   -webkit-column-count:2;
   width: 96%;
-  height: 1700px;
+  height: 2000px;
 }  
 .maincontent-works a ,.maincontent-about a ,.maincontent-experience a{
   font-size: 18px;
