@@ -497,6 +497,7 @@ hr{
   -moz-column-gap: 2px;
   margin: 0 auto;
   width: 75%;
+  height: auto;
 }
 .row {
   margin: 0px 0px;
