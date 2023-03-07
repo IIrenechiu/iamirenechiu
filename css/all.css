@@ -603,6 +603,7 @@ hr{
   opacity: 1;
   box-shadow: 1px 1px 3px #30303040;
   margin: 0 auto;
+  height: fit-content;
 }
 
 .close {
@@ -618,7 +619,7 @@ hr{
 
 .overlay-inner img {
   height: auto;
-  width: 100%;
+  width: 500px;
   transform: none;
 }
 
@@ -664,7 +665,11 @@ hr{
   -webkit-column-count:2;
   width: 96%;
   height: 2000px;
-}  
+} 
+
+.overlay-inner img {
+  width: 100%;
+}
 .maincontent-works a ,.maincontent-about a ,.maincontent-experience a{
   font-size: 18px;
   letter-spacing: 0.3em;
