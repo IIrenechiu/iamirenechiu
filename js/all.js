@@ -22,6 +22,11 @@ button.addEventListener("click", function (event) {
 //   });
 // });
 
+$(document).ready(function(){
+  $("contentpic").click(function(){
+    $("content").css({" overflow":"hidden"});
+  });
+});
 
 //tab-innerwrap
 $(function(){

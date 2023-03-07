@@ -535,6 +535,8 @@ hr{
   -webkit-column-break-inside: avoid; 
   width: 100%;
   margin: 0 auto;
+  height: 100%;
+  overflow: inherit;
 }
 
 .content img{
@@ -584,7 +586,6 @@ hr{
   bottom: 0px;
   z-index: 10000;
   display: none;
-  padding-top: 20px;
   overflow-y: scroll;
 }
 
